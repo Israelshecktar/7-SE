@@ -59,8 +59,9 @@ header {
     margin: 0 auto; /* Centers the logo in the container */
 }
 
-.logo img {
-  height: 60px; /* Adjust logo size */
+/* The logo */
+.logo {
+    height: 100px;
 }
 
 nav ul {
@@ -235,4 +236,35 @@ footer {
 /* Add the gold-text class to the header theme */
 header .container .logo h1 {
   display: none; /* Hide the original logo text */
+}
+/* Additions to style.css after the existing CSS definitions */
+
+/* Using Roboto for improved readability */
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Form field animations */
+input[type="text"],
+input[type="password"] {
+    transition: border 0.3s ease-in-out;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+    border: 1px solid var(--secondary-color);
+}
+
+/* Hidden class for the caps-lock message */
+.hidden {
+    display: none;
+}
+
+/* Responsive input fields */
+@media (max-width: 768px) {
+    input[type="text"],
+    input[type="password"] {
+        width: 100%;
+        margin-bottom: 10px;
+    }
 }

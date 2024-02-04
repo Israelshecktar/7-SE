@@ -46,5 +46,17 @@ function startTestimonialSlider() {
         }, 5000); // Switch testimonials every 5 seconds
     }
 }
+// Addition to scripts.js
 
-// Make sure to later add event listeners for social media links
+// Toggle password visibility
+const togglePassword = document.querySelector('#togglePassword');
+const password = document.querySelector('#password');
+
+togglePassword.addEventListener('click', function (e) {
+  // toggle the type attribute
+  const type = password.getAttribute('type') === 'password' ? 'text' : 'password';
+  password.setAttribute('type', type);
+  // toggle the eye slash icon
+  this.classList.toggle('fa-eye-slash');
+});
+
