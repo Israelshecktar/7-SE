@@ -93,6 +93,17 @@ nav a:hover {
   background-image: url('https://theaseanpost.com/sites/default/files/2019-06/12PM-WIRE-WED-27062019-SK.jpg'); /* Add your background image here */
   background-size: cover; /* Cover the entire space of the element */
   background-position: center; /* Center the image within the element */
+  color: rgb(0, 0, 0);
+}
+.quote-btn{
+  border: 1px solid black;
+  border-radius: 1.3rem;
+  font-weight: 600;
+
+}
+
+.quote-btn:hover{
+  background-color:#0052cc;
   color: white;
 }
 
@@ -218,8 +229,8 @@ footer {
   header,
   .container,
   footer {
-    padding-left: 10px;
-    padding-right:
+    padding: 20px 20px;
+   
 }
    /* Define gold text color */
 /* Add this to your style.css file */
