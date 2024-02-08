@@ -1,0 +1,116 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+body {
+  background-color: #fff;
+}
+header {
+  width: 100%;
+  height: 20vh;
+  background-color: blue;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+div.navbar ul li {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.3rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-decoration: none;
+  font-weight: bolder;
+}
+a:hover {
+  color: coral;
+}
+ul {
+  display: flex;
+  width: 500px;
+  justify-content: space-evenly;
+}
+header:first-child {
+  color: coral;
+}
+main.container {
+  width: 100%;
+  background-color: #fff;
+  /*min-height: 100vh;*/
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+div.image {
+  height: 97vh;
+  width: 90%;
+  background-color: #333;
+}
+section.services {
+  margin-top: 30px;
+}
+h2.services {
+  margin: 20px;
+}
+div.services {
+  display: flex;
+}
+div.serices:hover .list {
+  transform: translateX(200%);
+}
+h2.div {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: blue;
+}
+div.list {
+  padding: 5px;
+  width: 280px;
+  height: 150px;
+  margin: 5px;
+  box-sizing: border-box;
+  box-shadow: 0px 5px 5px gray, 0px 5px 5px gray;
+  border-radius: 20px;
+  transition: transform 1s;
+}
+section.clients {
+  margin-top: 80px;
+}
+h3.clients {
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin: 15px;
+}
+div.clients {
+  width: 250px;
+  height: 200px;
+  margin-top: 30px;
+  border-radius: 20px;
+  box-shadow: 0px 5px 5px gray, 0px 5px 5px gray;
+  padding: 15px;
+  transition: transform 1s;
+}
+p.clients {
+  font-size: large;
+}
+footer {
+  background-color: blue;
+  height: 240px;
+  display: block;
+  text-align: center;
+  color: #fff;
+  line-height: 2.5em;
+  margin-top: 20px;
+}
+#info {
+  font-weight: 300;
+}
+section.clients:hover div.clients {
+  transform: translateX(-100%);
+  width: 100vh;
+}
