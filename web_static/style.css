@@ -7,7 +7,7 @@
 
 /* Establishing a color scheme */
 :root {
-  --primary-color: #0052cc;       /* Primary color for buttons and links */
+  --primary-color: #0052cc ;       /* Primary color for buttons and links */
   --secondary-color: #00c7d9;     /* Secondary color for accents and icons */
   --text-color: #333;             /* Main text color */
   --background-color: #f4f4f4;    /* Background color for the body */
@@ -39,6 +39,36 @@ body {
   text-align: center;
   font-size: 2em;
   /* additional styles, such as margin and padding, can be adjusted as needed */
+}
+/* Create a class for the boxes */
+.box {
+  width: 250px; /* Set the width of the content area */
+  height: 300px; /* Set the height of the content area */
+  padding: 20px; /* Add some space around the content area */
+  margin: 10px; /* Add some space outside the border */
+  box-sizing: border-box; /* Include the padding and border in the width and height calculation */
+  border-radius: 0 20% 0 20%;
+  display: inline-block; /* Make the boxes flow horizontally */
+}
+
+/* Add some background color to the boxes */
+.box1 {
+  background-color: white;
+  border: 1px solid #FFD700;
+}
+
+.box2 {
+  background-color: white;
+  border: 1px solid #0052cc;
+}
+
+.box3 {
+  background-color: white;
+  border: 2px solid pink;
+}
+.box4 {
+	background-color: white;
+	border: 1px solid green;
 }
 
 /* Navigation and header styles */
@@ -85,7 +115,6 @@ nav a.active,
 nav a:hover {
   text-decoration: underline;
 }
-
 /* Introduction styles with background image */
 .intro {
   text-align: center;
@@ -93,8 +122,13 @@ nav a:hover {
   background-image: url('https://theaseanpost.com/sites/default/files/2019-06/12PM-WIRE-WED-27062019-SK.jpg'); /* Add your background image here */
   background-size: cover; /* Cover the entire space of the element */
   background-position: center; /* Center the image within the element */
-  color: rgb(0, 0, 0);
+  color: #ffffff;
+  background-color: rgba(0, 0, 0, 1); /* Add a semi-transparent black background color */
+
 }
+
+
+/* Introduction styles with background image */
 .quote-btn{
   border: 1px solid black;
   border-radius: 1.3rem;
@@ -153,7 +187,7 @@ button:hover {
 
 /* Testimonials slider */
 .testimonials {
-  padding: 50px 0;
+  padding: 60px 0;
   background-color: white;
 }
 
@@ -230,7 +264,7 @@ footer {
   .container,
   footer {
     padding: 20px 20px;
-   
+
 }
    /* Define gold text color */
 /* Add this to your style.css file */
