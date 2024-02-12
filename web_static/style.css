@@ -22,9 +22,9 @@ body {
 
 /* Utility classes for padding and full-width containers */
 .container {
-  padding: 0 20px;
   max-width: 1200px;
-  margin: auto;
+  margin: 0 auto;
+  padding: 0, 15px;
 }
 
 .full-width {
@@ -73,36 +73,44 @@ body {
 
 /* Navigation and header styles */
 header {
-  background: var(--primary-color);
-  color: white;
-  padding: 20px 0;
-  text-align: center; /* Center header content */
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+	background: var(--primary-color);
+	color: white;
+	padding: 20px 0;
+	text-align: center; /* Center header content */
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 /* Logo image styles */
 .logo img.logo-image {
-    height: 60px; /* Adjust as needed */
-    width: 60px;  /* Make width and height equal for a perfect circle */
-    border-radius: 50%; /* This creates the round shape */
-    object-fit: cover; /* Ensures the image covers the area without being distorted */
-    display: block; /* To display the image as a block-level element */
-    margin: 0 auto; /* Centers the logo in the container */
+	height: 60px; /* Adjust as needed */
+	width: 60px;  /* Make width and height equal for a perfect circle */
+	border-radius: 50%; /* This creates the round shape */
+	object-fit: cover; /* Ensures the image covers the area without being distorted */
+	display: block; /* To display the image as a block-level element */
+	margin: 0 auto;
+	/* Centers the logo in the container */
+
 }
 
 /* The logo */
 .logo {
-    height: 100px;
+	height: 100px;
+}
+nav {
+	float: right;
 }
 
 nav ul {
-  list-style-type: none;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
 }
 
 nav ul li {
-  margin: 0 15px;
+  margin-left: 10px;
+  display: inline;
+  padding: 3px;
+  margin-bottom: 4px;
+
 }
 
 nav a {
@@ -119,14 +127,18 @@ nav a:hover {
 .intro {
   text-align: center;
   padding: 50px 0;
-  background-image: url('https://theaseanpost.com/sites/default/files/2019-06/12PM-WIRE-WED-27062019-SK.jpg'); /* Add your background image here */
-  background-size: cover; /* Cover the entire space of the element */
-  background-position: center; /* Center the image within the element */
+  /* Change the background image to use only the second image from your local folder */
+  background-image: url('images/intro-img/image4.jpg');
+  /* Adjust the position and size of the image as needed */
+  background-position: center;
+  background-size: cover;
   color: #ffffff;
-  background-color: rgba(0, 0, 0, 1); /* Add a semi-transparent black background color */
-
+  background-color: rgba(0, 0, 0, 0.5);
+  background-blend-mode: darken;
+  width: 100%;
+  height: 350px;
+  /* Remove the animation, background-repeat, and overflow properties */
 }
-
 
 /* Introduction styles with background image */
 .quote-btn{
@@ -150,6 +162,7 @@ nav a:hover {
   margin-bottom: 30px;
   font-size: 1.2em;
 }
+
 button {
   padding: 10px 25px;
   border: none;
